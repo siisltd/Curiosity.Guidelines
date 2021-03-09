@@ -16,7 +16,6 @@ nav:
     - 'nginx': 'development/nginx.md'
     - 'systemd': 'development/systemd.md'
     - 'Тестирование': 'development/testing.md'
-    - 'Nexus': 'development/nexus.md'
   - 'git':
       - 'Commits': 'git/commits.md'
       - 'Ветки': 'git/branches.md'
