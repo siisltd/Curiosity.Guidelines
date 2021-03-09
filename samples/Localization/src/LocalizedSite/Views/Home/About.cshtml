@@ -1,0 +1,16 @@
+﻿@using LocalizedSite.Resources
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IViewLocalizer Localizer
+@inject IStringLocalizer<SharedResources> Shared
+
+@{
+    ViewData["Title"] = Shared[ResourceKeys.AboutView_Title];
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+
+
+<p>@ViewData["Shared"]</p>
+<p>@ViewData["Private"]</p>

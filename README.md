@@ -1,1 +1,3 @@
-Curiosity.Guidelines
+# Curiosity.Guidelines
+
+Практики и подходы разработки ПО, принятые в команде.

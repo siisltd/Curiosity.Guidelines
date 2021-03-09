@@ -1,0 +1,66 @@
+site_name: Dev Guidelines
+site_url: http://dev-guidelines.siisltd.ru
+site_description: База знаний отдела разработки SIIS Ltd/IT Garden
+site_author: SIIS Ltd
+copyright: SIIS Ltd © 2021
+
+nav:
+  - 'Введение': 'index.md'
+  - 'Общие правила': 
+    - 'Принципы разработки': 'development/index.md'
+    - 'История изменений': 'development/changelog.md'
+    - 'Версионирование': 'development/versioning.md'
+    - 'Конфигурирование приложений': 'development/configurations.md'
+    - 'Документация': 'development/docs.md'
+    - 'Настройка CI/CD': 'development/cicd.md'
+    - 'nginx': 'development/nginx.md'
+    - 'systemd': 'development/systemd.md'
+    - 'Тестирование': 'development/testing.md'
+    - 'Nexus': 'development/nexus.md'
+  - 'git':
+      - 'git': 'git/index.md'
+      - 'Commits': 'git/commits.md'
+      - 'Branches': 'git/branches.md'
+      - 'Merge Requests': 'git/merge_requests.md'
+  - '.NET':
+      - '.NET': 'dotNetCodeStyle/index.md'
+      - 'Conventions': 'dotNetCodeStyle/conventions.md'
+      - 'Комментарии': 'dotNetCodeStyle/comments.md'
+      - 'Исключения': 'dotNetCodeStyle/exceptions.md'
+      - 'Локализация': 'dotNetCodeStyle/localization.md'
+      - 'SOLID': 'dotNetCodeStyle/solid.md'
+      - 'Структура репозитория': 'dotNetCodeStyle/solutions.md'
+      - 'Асинхронное программирование': 'dotNetCodeStyle/async.md'
+      - 'Работы с коллекциями': 'dotNetCodeStyle/collections.md'
+      - 'EntityFramework': 'dotNetCodeStyle/ef.md'
+      - 'Dapper': 'dotNetCodeStyle/dapper.md'
+      - 'Логирование': 'dotNetCodeStyle/logs.md'
+      - 'Performance': 'dotNetCodeStyle/performance.md'
+  - 'Android':
+      - 'Android': 'androidCodeStyle/index.md'
+  - 'WEB':
+      - 'Web': 'web/index.md'
+  - 'Базы данных':
+      - 'Базы данных': 'database/index.md'
+      - 'PostgresSQL': 'database/postgres.md'
+  - 'Образование': 'education.md'
+  - 'FAQ': 'faq.md'
+
+theme:
+  name: 'material'
+  language: 'ru'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  palette:
+    primary: 'red'
+    accent: 'red'
+
+extra:
+  search:
+    language: 'en, ru'
+
+markdown_extensions:
+  - codehilite
+  - markdown_include.include:
+      base_path: docs
