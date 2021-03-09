@@ -7,7 +7,7 @@ copyright: <a href="https://siisltd.ru">SIIS Ltd</a> © 2021
 nav:
   - 'Введение': 'index.md'
   - 'Общие правила': 
-    - 'Принципы разработки': 'development/index.md'
+    - 'Общие моменты': 'development/index.md'
     - 'История изменений': 'development/changelog.md'
     - 'Версионирование': 'development/versioning.md'
     - 'Конфигурирование приложений': 'development/configurations.md'
@@ -18,12 +18,10 @@ nav:
     - 'Тестирование': 'development/testing.md'
     - 'Nexus': 'development/nexus.md'
   - 'git':
-      - 'git': 'git/index.md'
       - 'Commits': 'git/commits.md'
       - 'Ветки': 'git/branches.md'
       - 'Merge Requests': 'git/merge_requests.md'
   - '.NET':
-      - '.NET': 'dotNetCodeStyle/index.md'
       - 'Naming Conventions': 'dotNetCodeStyle/conventions.md'
       - 'Комментарии': 'dotNetCodeStyle/comments.md'
       - 'Исключения': 'dotNetCodeStyle/exceptions.md'
@@ -36,12 +34,7 @@ nav:
       - 'Dapper': 'dotNetCodeStyle/dapper.md'
       - 'Логирование': 'dotNetCodeStyle/logs.md'
       - 'Performance': 'dotNetCodeStyle/performance.md'
-  - 'Android':
-      - 'Android': 'androidCodeStyle/index.md'
-  - 'WEB':
-      - 'Web': 'web/index.md'
   - 'Базы данных':
-      - 'Базы данных': 'database/index.md'
       - 'PostgresSQL': 'database/postgres.md'
   - 'Образование': 'education.md'
   - 'FAQ': 'faq.md'
