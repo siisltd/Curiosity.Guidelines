@@ -1,8 +1,8 @@
-site_name: Dev Guidelines
-site_url: http://dev-guidelines.siisltd.ru
-site_description: База знаний отдела разработки SIIS Ltd/IT Garden
+site_name: Curiosity Guidelines
+site_url: https://curiosity-guidelines.readthedocs.io
+site_description: База знаний/PlayBook Curiosity
 site_author: SIIS Ltd
-copyright: SIIS Ltd © 2021
+copyright: <a href="https://siisltd.ru">SIIS Ltd</a> © 2021
 
 nav:
   - 'Введение': 'index.md'
@@ -20,11 +20,11 @@ nav:
   - 'git':
       - 'git': 'git/index.md'
       - 'Commits': 'git/commits.md'
-      - 'Branches': 'git/branches.md'
+      - 'Ветки': 'git/branches.md'
       - 'Merge Requests': 'git/merge_requests.md'
   - '.NET':
       - '.NET': 'dotNetCodeStyle/index.md'
-      - 'Conventions': 'dotNetCodeStyle/conventions.md'
+      - 'Naming Conventions': 'dotNetCodeStyle/conventions.md'
       - 'Комментарии': 'dotNetCodeStyle/comments.md'
       - 'Исключения': 'dotNetCodeStyle/exceptions.md'
       - 'Локализация': 'dotNetCodeStyle/localization.md'
@@ -47,20 +47,30 @@ nav:
   - 'FAQ': 'faq.md'
 
 theme:
-  name: 'material'
-  language: 'ru'
+  name: material
+  language: en
+  favicon: images/siisltd.png
+  logo: images/dark_siisltd.png
   font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+    text: Roboto
+    code: Roboto Mono
   palette:
-    primary: 'red'
-    accent: 'red'
+    primary: red
+    accent: red
+  features:
+    - navigation.sections
+    - navigation.expand
+
+markdown_extensions:
+  - codehilite
+  - toc:
+      permalink: true
+  - markdown_include.include:
+      base_path: docs
+
+extra_css:
+  - 'stylesheets/extra.css'
 
 extra:
   search:
     language: 'en, ru'
-
-markdown_extensions:
-  - codehilite
-  - markdown_include.include:
-      base_path: docs

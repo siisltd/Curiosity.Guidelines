@@ -1,6 +1,6 @@
-# .Net code style
+# .NET code style
 
-В это разделе собраны рекомендации, практики разработки приложений на базе .Net
+В это разделе собраны рекомендации и практики разработки приложений на базе .NET
 
 - [Структура solution'а](solutions.md)
 - [Coding Standard](conventions.md)

@@ -19,7 +19,7 @@
 
 ## `.NET/C#`
 
-- [`EN`] [`Book`] [Andrew Lock - ASP.NET Core in Action](files/Andrew_Lock_ASP_NET_Core_in_Action.pdf): отличный разбор того, как работает `ASP.NET Core`. Абсолютный `must read`.
+- [`EN`] [`Book`] Andrew Lock - ASP.NET Core in Action: отличный разбор того, как работает `ASP.NET Core`. Абсолютный `must read`.
 
 ## `Базы данных`
 

@@ -1,4 +1,4 @@
-# Naming
+# Naming Conventions
 
 ## C# Coding Standards and Naming Conventions
 
@@ -414,7 +414,7 @@ questionFlags.HasFlag(QuestionFlags.HidePreviousButton)
 
 ***Почему: Более читаемый код.***
 
->> Раньше советовали делать проверку наличия флага через битовую операцию, т.к. работало быстрее, чем HasFlag. Но в .NET Core 3.1 это изменилось, HasFlag работает также быстро (пруф: https://www.code4it.dev/blog/hasflag-performance-benchmarkdotnet).
+> Раньше советовали делать проверку наличия флага через битовую операцию, т.к. работало быстрее, чем HasFlag. Но в .NET Core 3.1 это изменилось, HasFlag работает также быстро (пруф: https://www.code4it.dev/blog/hasflag-performance-benchmarkdotnet).
 
 ### Для enum'ов, которые сохраняются в базу или передаются по сети, нужно первым делать значение `Unknown=0` или `None=0`, для остальных значений проставлять числовые значения:
 
