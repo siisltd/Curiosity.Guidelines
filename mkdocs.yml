@@ -67,4 +67,6 @@ extra_css:
 
 plugins:
   - search:
-      lang: ru, en
+      lang: 
+        - ru
+        - en
