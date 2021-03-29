@@ -40,7 +40,7 @@ nav:
 
 theme:
   name: material
-  language: en
+  language: ru
   favicon: images/siisltd.png
   logo: images/dark_siisltd.png
   font:
@@ -52,6 +52,8 @@ theme:
   features:
     - navigation.sections
     - navigation.expand
+    - search.suggest
+    - search.highlight
 
 markdown_extensions:
   - codehilite
@@ -63,6 +65,6 @@ markdown_extensions:
 extra_css:
   - 'stylesheets/extra.css'
 
-extra:
-  search:
-    language: 'en, ru'
+plugins:
+  - search:
+      lang: ru, en
