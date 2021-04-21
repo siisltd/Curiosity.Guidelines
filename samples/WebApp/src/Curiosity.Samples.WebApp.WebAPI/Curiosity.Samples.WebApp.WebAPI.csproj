@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>Curiosity.Samples.WebApp.API</RootNamespace>
+        <Nullable>enable</Nullable>
+        <AssemblyVersion>0.0.1</AssemblyVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Curiosity.Archiver.SharpZip" Version="1.1.0" />
+      <PackageReference Include="Curiosity.DAL" Version="1.1.1" />
+      <PackageReference Include="Curiosity.EMail" Version="1.0.1" />
+      <PackageReference Include="Curiosity.EMail.SMTP" Version="1.0.4" />
+      <PackageReference Include="Curiosity.Hosting.Web" Version="1.1.14" />
+      <PackageReference Include="Curiosity.Migrations" Version="3.0.3" />
+      <PackageReference Include="Curiosity.Migrations.PostgreSQL" Version="3.0.2" />
+      <PackageReference Include="Curiosity.Notifications" Version="1.0.0" />
+      <PackageReference Include="Curiosity.Notifications.EMail" Version="1.0.0" />
+      <PackageReference Include="Curiosity.TempFiles" Version="1.1.0" />
+      <PackageReference Include="Curiosity.TimeZone" Version="1.0.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.14" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.14" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+      <PackageReference Include="MimeTypeMapOfficial" Version="1.0.15" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.2" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.2" />
+      <PackageReference Include="System.Text.Json" Version="4.7.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="config.yml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="NLog.config">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Curiosity.Samples.WebApp.Common\Curiosity.Samples.WebApp.Common.csproj" />
+      <ProjectReference Include="..\Curiosity.Samples.WebApp.DAL\Curiosity.Samples.WebApp.DAL.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Migrations\Scripts\20210304-1026.00-add_identity.sql" />
+      <EmbeddedResource Include="Migrations\Scripts\20210304-1026.00-add_identity.sql" />
+      <None Remove="Migrations\Scripts\20210304-1026.01-initial.sql" />
+      <EmbeddedResource Include="Migrations\Scripts\20210304-1026.01-initial.sql" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+        <NoWarn>$(NoWarn);1573</NoWarn>
+    </PropertyGroup>
+
+</Project>

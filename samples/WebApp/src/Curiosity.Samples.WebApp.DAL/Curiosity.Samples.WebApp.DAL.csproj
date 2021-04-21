@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Curiosity.DAL" Version="1.1.1" />
+      <PackageReference Include="Curiosity.DAL.EF" Version="1.1.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.5" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="5.0.5" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Curiosity.Samples.WebApp.Common\Curiosity.Samples.WebApp.Common.csproj" />
+    </ItemGroup>
+
+</Project>
