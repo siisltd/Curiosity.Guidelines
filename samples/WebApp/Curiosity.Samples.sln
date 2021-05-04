@@ -1,9 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB49C46F-E1E6-4297-8716-C45D3950275A}"
-ProjectSection(SolutionItems) = preProject
-	src\ITG.BG.WebAPI\obj\Debug\netcoreapp3.1\.NETCoreApp,Version = v3.1.AssemblyAttributes.cs = src\ITG.BG.WebAPI\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
-EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curiosity.Samples.WebApp.DAL", "src\Curiosity.Samples.WebApp.DAL\Curiosity.Samples.WebApp.DAL.csproj", "{66E4665C-AFDB-4661-9845-E7FCD0DB1631}"
 EndProject
