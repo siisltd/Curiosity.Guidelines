@@ -33,6 +33,14 @@ nav:
       - 'Dapper': 'dotNetCodeStyle/dapper.md'
       - 'Логирование': 'dotNetCodeStyle/logs.md'
       - 'Performance': 'dotNetCodeStyle/performance.md'
+  - 'WEB':
+      - 'API':
+        - 'Intro': 'web/api/index.md'
+        - 'Ответы (Response)': 'web/api/response.md'
+        - 'Валидация': 'web/api/validation.md'
+        - 'Исключения': 'web/api/exceptions.md'
+        - 'Авторизация': 'web/api/authorization.md'
+        - 'Документация': 'web/api/documentation.md'
   - 'Базы данных':
       - 'PostgresSQL': 'database/postgres.md'
   - 'Образование': 'education.md'
