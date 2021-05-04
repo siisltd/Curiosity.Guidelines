@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB49C46F-E1E6-4297-8716-C45D3950275A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curiosity.Samples.WebApp.DAL", "src\Curiosity.Samples.WebApp.DAL\Curiosity.Samples.WebApp.DAL.csproj", "{66E4665C-AFDB-4661-9845-E7FCD0DB1631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curiosity.Samples.WebApp.WebAPI", "src\Curiosity.Samples.WebApp.WebAPI\Curiosity.Samples.WebApp.WebAPI.csproj", "{64070FC5-2B9D-4017-B80A-AC7CCB78B2A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{9ECCBBEC-34F5-46D6-89EE-02B0BADACB52}"
+ProjectSection(SolutionItems) = preProject
+	docs\README.md = docs\README.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7DBB766E-CF9A-448D-A0F1-C7D8DEE2A2C4}"
+ProjectSection(SolutionItems) = preProject
+	tests\README.md = tests\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curiosity.Samples.WebApp.Common", "src\Curiosity.Samples.WebApp.Common\Curiosity.Samples.WebApp.Common.csproj", "{6C38C9FB-651A-4560-BA04-533237356FFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66E4665C-AFDB-4661-9845-E7FCD0DB1631} = {CB49C46F-E1E6-4297-8716-C45D3950275A}
+		{64070FC5-2B9D-4017-B80A-AC7CCB78B2A6} = {CB49C46F-E1E6-4297-8716-C45D3950275A}
+		{6C38C9FB-651A-4560-BA04-533237356FFE} = {CB49C46F-E1E6-4297-8716-C45D3950275A}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E4665C-AFDB-4661-9845-E7FCD0DB1631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E4665C-AFDB-4661-9845-E7FCD0DB1631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E4665C-AFDB-4661-9845-E7FCD0DB1631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E4665C-AFDB-4661-9845-E7FCD0DB1631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64070FC5-2B9D-4017-B80A-AC7CCB78B2A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64070FC5-2B9D-4017-B80A-AC7CCB78B2A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64070FC5-2B9D-4017-B80A-AC7CCB78B2A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64070FC5-2B9D-4017-B80A-AC7CCB78B2A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C38C9FB-651A-4560-BA04-533237356FFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C38C9FB-651A-4560-BA04-533237356FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C38C9FB-651A-4560-BA04-533237356FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C38C9FB-651A-4560-BA04-533237356FFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

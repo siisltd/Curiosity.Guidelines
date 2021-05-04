@@ -1,0 +1,59 @@
+﻿Urls: http://127.0.0.1:39341
+
+ExternalUrls:
+  # URL основного клиентского приложения
+  WebSite: https://sample.curiosity.ru
+
+Log:
+  LogConfigurationPath: ./NLog.config
+  LogOutputDirectory: ./log
+
+LogRequestContent: true
+
+DbOptions:
+  ConnectionString: Server=localhost;Port=5432;Database=curiosity_sample;User Id=postgres;Password=qwerty
+  IsGlobalLoggingEnabled: true
+
+# Параметры миграции  
+MigrationOptions:
+  # строка подключения к БД для мигратора 
+  ConnectionString: Server=localhost;Port=5432;Database=curiosity_sample;User Id=postgres;Password=qwerty
+  DataBaseEncoding: UTF8
+  LC_Collate: en_US.UTF-8
+  LC_Type: en_US.UTF-8
+  LogSql: true
+  # пользователь БД которому будет переданы права доступа на создаваемые таблицы
+  GrantUser: postgres
+
+# Опции авторизации
+AuthOptions:
+  Issuer: Curiosity sample API
+  Audience: Curiosity sample Client
+  # уникальный ключ для генерации токена (при смене - все старые токены не валидны)
+  Key: 1075F0D5-0D2F-4639-9D18-271AC715B581
+  LifeDays: 30
+  # Блокировать авторизацию, если ввели неправильный пароль?
+  IsLockoutEnable: true
+  # Блокировать авторизацию на это время, сек
+  LockoutTimeSec: 300
+  # Количество неверных попыток авторизации до блокировки
+  LockoutFailureCount: 5
+
+# локальное хранилище
+TempFiles:
+  TempPath: /tmp/curiosity/sample
+
+# Настройки отправителя email сообщений
+SmtpEMailOptions:
+  SmtpServer: curiosity.sender.ru
+  SmtpLogin: curiosity
+  SmtpPassword: xxx
+  EMailFrom: sample@curiosity.ru
+  ReplyTo: support@curiosity.ru
+  SenderName: Curiosity
+
+# Пользователи, которые создаются первой миграцией
+# пароль - должен быть сложный
+DefaultUsers:
+  - Email: sample@curiosity.ru
+    Password: Qwerty%1
