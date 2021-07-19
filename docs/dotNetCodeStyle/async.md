@@ -156,3 +156,4 @@ public Task<int> GetCountAsync()
 
 - [Про `CPU bound` и `I/O bound`](https://www.infoworld.com/article/3201030/understand-the-net-clr-thread-pool.html)
 - [Про контекст синхронизации](http://hamidmosalla.com/2018/06/24/what-is-synchronizationcontext/)
+- [Про то, как приложение с async ведет себя под нагрузкой](https://habr.com/en/company/dododev/blog/461081/)

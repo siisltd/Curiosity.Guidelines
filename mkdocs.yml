@@ -34,6 +34,8 @@ nav:
       - 'Логирование': 'dotNetCodeStyle/logs.md'
       - 'Performance': 'dotNetCodeStyle/performance.md'
   - 'WEB':
+      - 'Intro': 'index.md'
+      - 'Оптимизации': 'optimisations.md'
       - 'API':
         - 'Intro': 'web/api/index.md'
         - 'Ответы (Response)': 'web/api/response.md'
@@ -42,7 +44,9 @@ nav:
         - 'Авторизация': 'web/api/authorization.md'
         - 'Документация': 'web/api/documentation.md'
   - 'Базы данных':
+      - 'Intro': 'database/index.md'
       - 'PostgresSQL': 'database/postgres.md'
+      - 'Оптимизации': 'database/optimisation.md'
   - 'Образование': 'education.md'
   - 'FAQ': 'faq.md'
 
