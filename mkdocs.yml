@@ -34,8 +34,8 @@ nav:
       - 'Логирование': 'dotNetCodeStyle/logs.md'
       - 'Performance': 'dotNetCodeStyle/performance.md'
   - 'WEB':
-      - 'Intro': 'index.md'
-      - 'Оптимизации': 'optimisations.md'
+      - 'Intro': 'web/index.md'
+      - 'Оптимизации': 'web/optimisations.md'
       - 'API':
         - 'Intro': 'web/api/index.md'
         - 'Ответы (Response)': 'web/api/response.md'
