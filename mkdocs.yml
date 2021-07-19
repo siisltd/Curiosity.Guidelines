@@ -21,7 +21,7 @@ nav:
       - 'Ветки': 'git/branches.md'
       - 'Merge Requests': 'git/merge_requests.md'
   - '.NET':
-      - 'Naming Conventions': 'dotNetCodeStyle/conventions.md'
+      - 'Conventions': 'dotNetCodeStyle/conventions.md'
       - 'Комментарии': 'dotNetCodeStyle/comments.md'
       - 'Исключения': 'dotNetCodeStyle/exceptions.md'
       - 'Локализация': 'dotNetCodeStyle/localization.md'
