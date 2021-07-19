@@ -46,7 +46,7 @@ nav:
   - 'Базы данных':
       - 'Intro': 'database/index.md'
       - 'PostgresSQL': 'database/postgres.md'
-      - 'Оптимизации': 'database/optimisation.md'
+      - 'Оптимизации': 'database/optimisations.md'
   - 'Образование': 'education.md'
   - 'FAQ': 'faq.md'
 
