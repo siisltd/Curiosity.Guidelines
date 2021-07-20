@@ -1,4 +1,4 @@
-# Naming Conventions
+# Conventions
 
 ## C# Coding Standards and Naming Conventions
 
