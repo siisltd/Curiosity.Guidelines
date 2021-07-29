@@ -20,7 +20,8 @@ var toAddresses = new List<string> { email };
 
 SendEmail(toAddresses, "donotreply@example.com", "Confirm your Account", body);
 ```
-![Демонстрация Email шаблона](https://github.com/siisltd/Curiosity.Guidelines/blob/razorExample/docs/images/email_template_example.jpg)
+##### Демонстрация Email шаблона
+![скрин](https://github.com/siisltd/Curiosity.Guidelines/blob/razorExample/docs/images/email_template_example.jpg)
 
 ##### Для тестирования был использован локальный SMTP клиент [Papercut](https://github.com/ChangemakerStudios/Papercut-SMTP)
 
