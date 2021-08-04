@@ -127,9 +127,11 @@ namespace Curiosity.Samples.WebApp.API.Startup
 
             app.UseStaticFiles();
             app.UseRouting();
+
+            // CORS должен идти после роутинга, но перед авторизацией
+            app.UseCors(CorsPolicyName);
             app.UseAuthentication();
             app.UseAuthorization();
-            app.UseCors(CorsPolicyName);
 
             // документация
             app.UseAppSwagger(Configuration);
