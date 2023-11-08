@@ -19,9 +19,9 @@
         # длинна жизни токена
         LifeDays: 30
     ```
-- Устанавить пакет `Microsoft.AspNetCore.Authentication.JwtBearer`
+- Установить пакет `Microsoft.AspNetCore.Authentication.JwtBearer`
 
-- В классе `Startup` настроить авторизация и аутентификацию как на примере ниже: 
+- В классе `Startup` настроить авторизацию и аутентификацию как на примере ниже: 
     ```csharp
     services.AddAuthentication(options =>
         {
@@ -94,7 +94,7 @@
     -H  "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoi0J_QvtC00YjRg9C8INCf0YDQuNCx0L7QtdCyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWdlbnQiLCJDbGllbnRJZCI6IjMiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3ZlcnNpb24iOiIxIiwibmJmIjoxNjE3MjcyMzc1LCJleHAiOjE2MTk4NjQzNzUsImlzcyI6IklURyBCYW5rIEd1YXJhbnRlZXMgQVBJIiwiYXVkIjoiSVRHIEJhbmsgR3VhcmFudGVlcyBDbGllbnQifQ.FalR5clCPYxUzlrVkolGVSNlZoZx-uZceGQl7ryFCac"
     ```
 
-Для управления доступа к методам API используем атрибуты:
+Для управления доступом к методам API используем атрибуты:
 
 - `[AllowAnonymous]` - авторизация не требуется
 
@@ -109,7 +109,7 @@
     
  
 Для получения id авторизованного пользователя на беке, так же используем Claims,
-которые достаются из токена в слое `Authorization` и помещаются в `HttpContext.User` . Например, так (если есть Identity):
+которые достаются из токена в слое `Authorization` и помещаются в `HttpContext.User`. Например, так (если есть Identity):
 
 ```c#
 public long GetUserId(HttpContext httpContext)
