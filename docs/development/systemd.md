@@ -36,7 +36,7 @@ WantedBy=multi-user.target
 
 - `systemctl list-units`: отображает список сервисов, запущенных на сервере
 - `systemctl restart application.service`: перезапуск сервиса
-- `systemctl reload application.service`: обновляет логика работы сервиса без полной перезагрузки (невсегда работает, только если сервис может это делать)
+- `systemctl reload application.service`: обновляет логику работы сервиса без полной перезагрузки (не всегда работает, только если сервис может это делать)
 - `systemctl start application`: запуск
 - `systemctl stop application.service`: остановка
 - `systemctl enable application`: запуск сервиса при старте системы (добавим в автозагрузку)
